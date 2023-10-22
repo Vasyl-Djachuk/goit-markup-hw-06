@@ -157,6 +157,7 @@ button {
   height: 100vh;
   background-color: #ffffff;
   z-index: 99;
+  visibility: hidden;
 }
 .mobile-container {
   position: relative;
