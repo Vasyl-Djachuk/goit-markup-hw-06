@@ -36,6 +36,12 @@ ul {
   padding: 0 16px;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+  }
+}
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
@@ -61,13 +67,27 @@ button {
   align-items: center;
 }
 .header {
-  padding: 16px 0;
   background-color: #ffffff;
+  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 16px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .header {
+    padding: 0;
+  }
+  .header-nav {
+    padding: 24px 0;
+  }
+}
+
 .logo {
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
@@ -77,6 +97,11 @@ button {
   letter-spacing: 0, 03em;
   text-transform: uppercase;
   margin-right: 76px;
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .logo {
+    margin-right: 120px;
+  }
 }
 .logo-studio {
   color: #2e2f42;
@@ -98,7 +123,7 @@ button {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -4px;
   background-color: #404bbf;
   height: 4px;
   width: 100%;
@@ -124,12 +149,29 @@ button {
   gap: 40px;
   font-style: normal;
 }
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .address-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .address-container {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
 .address-list-tel {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .address-list-tel {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
 }
 .navigation-item:hover,
 .navigation-item:focus,
@@ -138,12 +180,18 @@ button {
   color: #404bbf;
 }
 /* ===================mobile menu ======================*/
+
 .menu-open-button {
   border: none;
   height: 24px;
   width: 24px;
   margin-left: auto;
   background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu-open-button {
+    display: none;
+  }
 }
 .menu-open-svg {
   fill: #2f2f37;
@@ -157,7 +205,9 @@ button {
   height: 100vh;
   background-color: #ffffff;
   z-index: 99;
+  transform: translateY(-100%);
   visibility: hidden;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-container {
   position: relative;
@@ -280,6 +330,7 @@ button {
       url(../images/background@2x.jpg);
   }
 }
+
 .hero-image-title {
   /* max-width: 496px; */
   color: #ffffff;
@@ -291,6 +342,7 @@ button {
   text-transform: capitalize;
   padding: 0 50px;
   margin-bottom: 72px;
+  text-align: center;
 }
 .hero-image-button {
   font-family: inherit;
@@ -309,6 +361,31 @@ button {
   min-width: 169px;
   height: 56px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .hero-image-title {
+    max-width: 496px;
+    padding: 0;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .hero-image {
+    padding: 112px 0;
+  }
+  .hero-image-title {
+    margin: 0 auto 36px auto;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .hero-image {
+    padding: 188px 0;
+  }
+  .hero-image-title {
+    margin: 0 auto 48px auto;
+  }
 }
 .hero-image-button:focus,
 .hero-image-button:hover {
@@ -362,6 +439,39 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .benefits-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .benefits {
+    padding: 120px 0;
+  }
+  .benefits-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .benefits-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: start;
+  }
+  .benefits-text {
+    font-weight: 400;
+  }
 }
 
 /*--------------------------- section_3-Our Team ---------------------------*/
@@ -439,6 +549,31 @@ button {
 .tean-icons {
   fill: #f4f4fd;
 }
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .container-team-table {
+    padding: 0 108px;
+  }
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+  .team-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .team {
+    padding: 120px 0;
+  }
+  .team-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .team-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
 .team-icon-link:hover,
 .team-icon-link:focus {
   background-color: #404bbf;
@@ -478,6 +613,43 @@ button {
 .portfolio-img {
   height: 280px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .portfolio-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .portfolio-img {
+    height: 300px;
+  }
+  .portfolio-list-item {
+    max-width: 356px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .portfolio-list-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+  }
+  .portfolio {
+    padding: 120px 0;
+  }
+  .portfolio-img {
+    height: auto;
+  }
+  .portfolio-list-item {
+    max-width: 360px;
+  }
+}
+
 .overlay {
   position: relative;
   overflow: hidden;
@@ -561,7 +733,34 @@ button {
   margin-bottom: 16px;
   text-align: center;
 }
-
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 108px;
+    gap: 72px 24px;
+  }
+  .footer-logo-text-cont {
+    margin: 0;
+    max-width: 264px;
+  }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+  .footer-container {
+    flex-direction: row;
+    gap: 0;
+    align-items: baseline;
+  }
+  .footer-logo-text-cont {
+    margin: 0 120px 0 0;
+    max-width: 264px;
+  }
+}
 .footer-logo-studio {
   color: #f4f4fd;
 }
@@ -580,6 +779,14 @@ button {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .social-media-text {
+    text-align: start;
+  }
+  .footer-logo {
+    text-align: unset;
+  }
 }
 .footer-icon-list {
   display: flex;
@@ -620,8 +827,15 @@ button {
   margin-bottom: 16px;
   text-align: center;
 }
-.form-subscribe-cont {
-  /* margin-left: auto; */
+@media screen and (min-width: 768px) {
+  .footer-name-form {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .form-subscribe-cont {
+    margin-left: auto;
+  }
 }
 .subscribe-form {
   width: 100%;
@@ -673,7 +887,14 @@ button {
   gap: 24px;
   flex-direction: column;
 }
-
+@media screen and (min-width: 768px) {
+  .button-input-container {
+    flex-direction: row;
+  }
+  .subscribe-form {
+    width: 264px;
+  }
+}
 /* -------------------------------modal-form-style---------------=-- */
 
 .beckdrop {
@@ -689,6 +910,7 @@ button {
 }
 .is-open {
   visibility: visible;
+  transform: translateY(0);
 }
 .modal-form {
   position: absolute;
@@ -704,7 +926,12 @@ button {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+@media screen and (min-width: 768px) {
+  .modal-form {
+    width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
+}
 .modal-icon-close-button {
   position: absolute;
   top: 24px;
@@ -810,6 +1037,11 @@ button {
   text-decoration-line: underline;
   color: #4d5ae5;
   margin-left: 24px;
+}
+@media screen and (min-width: 768px) {
+  .privacy-policy-link {
+    margin: 0;
+  }
 }
 .checkbox-container-privacy {
   margin-bottom: 24px;
