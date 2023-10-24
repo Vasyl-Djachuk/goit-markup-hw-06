@@ -214,6 +214,9 @@ button {
   width: 320px;
   margin: 0 auto;
   padding: 72px 24px 40px 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .mobile-butoon-close {
   position: absolute;
@@ -244,7 +247,7 @@ button {
   color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.11; /* 111.111% */
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
@@ -254,9 +257,7 @@ button {
 .mobile-list-li:not(:last-child) {
   margin-bottom: 40px;
 }
-.mobile-list-li:last-child {
-  margin-bottom: 168px;
-}
+
 .mobile-menu-tel {
   color: #4d5ae5;
   font-size: 20px;
@@ -282,6 +283,9 @@ button {
 .mobile-social-link {
   display: flex;
   gap: 40px;
+}
+.mobile-navigation {
+  margin-bottom: auto;
 }
 .mobile-social-item {
   width: 40px;
@@ -311,9 +315,9 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/mobile-bg.jpg);
   background-repeat: no-repeat;
-  max-width: 1440px;
+  max-width: 767px;
   background-position: center;
   background-size: cover;
   background-color: #2e2f42;
@@ -327,10 +331,51 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/background@2x.jpg);
+      url(../images/mobile-bg@2x.jpg);
   }
 }
-
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .hero-image {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-bg.jpg);
+    max-width: 1157px;
+  }
+  @media screen and (min-resolution: 192dpi) {
+    .hero-image {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet-bg@2x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 1158px) {
+  .hero-image {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desk-bg.jpg);
+    max-width: 1440px;
+  }
+  @media screen and (min-resolution: 192dpi) {
+    .hero-image {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/desk-bg@2x.jpg);
+    }
+  }
+}
 .hero-image-title {
   /* max-width: 496px; */
   color: #ffffff;
@@ -449,6 +494,9 @@ button {
   }
   .benefits-list-item {
     width: calc((100% - 24px) / 2);
+  }
+  .benefits-title {
+    text-align: start;
   }
 }
 @media screen and (min-width: 1158px) {
