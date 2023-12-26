@@ -1,0 +1,42 @@
+#controls {
+  border-radius: 8px;
+  background: #f6f6fe;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 32px;
+  display: block;
+}
+#controls button {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  background-color: #4e75ff;
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  margin-left: 16px;
+}
+#controls button:last-child {
+  background-color: #ff4e4e;
+}
+#controls input {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  outline: transparent;
+  text-align: center;
+}
+#boxes {
+  background-color: #f6f6fe;
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 16px;
+}

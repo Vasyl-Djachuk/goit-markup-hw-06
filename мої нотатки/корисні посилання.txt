@@ -1,0 +1,44 @@
+https://validator.w3.org/ - валідатор коду
+https://squoosh.app/ - оптимізатор зображень для сайтів jpg
+https://tinypng.com/ -оптимізація png зображень
+https://cssreference.io/ - довідник, але правда англійською мовою
+https://htmlcolorcodes.com/color-names/ - довідник найпоширеніших кольорів у різних форматах
+https://www.toptal.com/designers/htmlarrows/symbols/ і https://html.spec.whatwg.org/multipage/named-characters.html - довідники специфічних символів
+https://caninclude.glitch.me/ - перевірка можливості поєднань різних тегів за принципом батько-дитина
+https://fonts.google.com/ - безкоштовні шрифти
+(edited)
+
+https://icomoon.io/ -сервіс роботи з svg icons
+
+https://jakearchibald.github.io/svgomg/ -----оптимізація svg sprate
+
+https://animate.style/ -сайт з анімаціями туксту
+https://codepen.io/mpadalko/pen/PomeroW?editors=1100 Футбольне поле (приклад position: absolute)
+https://codepen.io/mpadalko/pen/LYNqpGG Position: Sticky пісочниця
+http://apps.eky.hk/css-triangle-generator/ як зробити трикутник з допомогою ccs border
+https://codepen.io/nazarelen/pen/EaNbLX?editors=1100 цікаві приклади з  функцією transform scale and rotate
+https://cubic-bezier.com/#.22,.84,.88,.03 генератор функції  cubic-bezier
+
+
+https://uk.javascript.info  кнтжка по джаві скрипт
+https://www.freecodecamp.org/ курси js якісь...?
+
+https://loading.io/ анімайії преловдер цікаві
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://github.com/ViktorSvertoka/goit-markup-hw-05

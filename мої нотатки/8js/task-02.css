@@ -1,0 +1,12 @@
+.gallery {
+  max-width: 1440px;
+  min-height: 848px;
+  list-style-type: none;
+  background-color: #ffffff;
+  padding: 100px 140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}

@@ -15,8 +15,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./css/main.js" defer></script>
   </head>
-  <body>
+  <body class="page-body">
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -32,10 +33,10 @@
               >
             </li>
             <li>
-              <a href="" class="navigation-item">Portfolio</a>
+              <a href="#portfolioid" class="navigation-item">Portfolio</a>
             </li>
             <li>
-              <a href="" class="navigation-item">Contacts</a>
+              <a href="#contacts" class="navigation-item">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -75,10 +76,12 @@
                 <a href="./index.html" class="mobile-menu-item">studio</a>
               </li>
               <li class="mobile-list-li">
-                <a href="" class="mobile-menu-item">portfolio</a>
+                <a href="#portfolioid" class="mobile-menu-item mob-portfolio"
+                  >portfolio</a
+                >
               </li>
               <li class="mobile-list-li">
-                <a href="" class="mobile-menu-item">contacts</a>
+                <a href="#contacts" class="mobile-menu-item">contacts</a>
               </li>
             </ul>
           </nav>
@@ -462,7 +465,7 @@
 
       <!-- ==========================section 4-Our Portfolio======================== -->
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolioid">
         <div class="container">
           <h2 class="portfolio-main-title">our portfolio</h2>
           <ul class="portfolio-list">
@@ -759,7 +762,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container footer-container">
         <div class="footer-logo-text-cont">
           <a class="footer-logo" href="./index.html"
